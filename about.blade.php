@@ -1,3 +1,4 @@
-<html>
-<p>HEY </p>
-</html>
+<?php
+print("hey");
+
+?>
