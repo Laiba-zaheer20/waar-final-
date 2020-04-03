@@ -20,6 +20,8 @@ class WaarController extends Controller
     public function index()
     {
         //
+
+        
         $data=category::all();
         return view('index',compact('data'));
     }
