@@ -21,7 +21,6 @@ class WaarController extends Controller
     {
         //
 
-        
         $data=category::all();
         return view('index',compact('data'));
     }
