@@ -1,0 +1,16 @@
+@if(!empty($size))
+<h3 style="font-weight:bold">Your Sizes</h3>
+@foreach($size as $s)
+
+
+<div style="width:100%;display:flex;justify-content:center;margin:10px">
+
+  <input type="radio" id="check" name="check" style="margin:20px"/>
+  <label style="margin:10px;font-size:large"><strong>Size: {{$s->SizeName}}</strong></label>
+  <label style="margin:10px;font-size:Large"><strong>Weight: {{$s->Weight}}</strong></label>
+  <label style="margin:10px;font-size:large"><strong>Height: {{$s->Height}}</strong></label>
+  </div>
+
+  @endforeach
+<input type="button" id="custom" class="btn btn-success" style="margin:20px" value="custom size"/>
+@endif
